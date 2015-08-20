@@ -1,2 +1,0 @@
-# javaProblems
-Java Exercises
