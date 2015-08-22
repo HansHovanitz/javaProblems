@@ -17,8 +17,8 @@ public class Main {
 			try {	
 				int choice = scan.nextInt();
 				switch (choice) {
-				case 1: Palindrome pal = new Palindrome();
-						pal.palindrome();
+				case 1: Palindrome pal = new Palindrome(scan);
+						pal.testPalindrome();
 						break;
 				case 0: menu = 0;
 				}
@@ -36,4 +36,3 @@ public class Main {
 }
 
 
-//Work on this at the same time?
