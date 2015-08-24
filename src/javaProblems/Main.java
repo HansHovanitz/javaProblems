@@ -17,7 +17,9 @@ public class Main {
 			System.out.println("Enter your choice:");
 			
 			try {			
+				//int choice = Integer.parseInt(scan.next());
 				int choice = scan.nextInt();
+				
 				
 				switch (choice) {
 				case 1: Palindrome pal = new Palindrome(scan);
@@ -29,9 +31,12 @@ public class Main {
 				case 0: menu = 0;
 				}
 			}
-			
+			catch (NumberFormatException e) {
+				System.out.println(e + "\nPlease enter an integer choice.");
+			}
 			catch (InputMismatchException e) {
 				System.out.println(e + "\nPlease enter an integer choice.");
+				scan.next();
 			}
 			finally {
 			}
