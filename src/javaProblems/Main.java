@@ -25,7 +25,7 @@ public class Main {
 			}
 			
 			catch (InputMismatchException e) {
-				System.out.println(e + "\nPlease enter an integer choice");
+				System.out.println(e + "\nPlease enter an integer choice.");
 			}
 			finally {
 			}
