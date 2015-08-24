@@ -10,15 +10,21 @@ public class Main {
 		Scanner scan = new Scanner(System.in);
 		
 		while (menu != 0) {
+			
 			System.out.println("Menu:\n"
-			+ "1: Palindrome ");
+			+ "1: Palindrome\n"
+			+ "2: Fibonacci");
 			System.out.println("Enter your choice:");
 			
-			try {	
+			try {			
 				int choice = scan.nextInt();
+				
 				switch (choice) {
 				case 1: Palindrome pal = new Palindrome(scan);
 						pal.testPalindrome();
+						break;
+				case 2: Fibonacci fib = new Fibonacci(scan);
+						fib.enterNumber();
 						break;
 				case 0: menu = 0;
 				}
