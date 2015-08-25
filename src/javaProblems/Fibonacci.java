@@ -15,7 +15,6 @@ public class Fibonacci {
 	public void enterNumber() {
 		
 		while (flag == false) {
-			System.out.println("TEST");
 			try {
 				System.out.println("Please enter a number:");
 				int choice = scan.nextInt();
@@ -32,6 +31,7 @@ public class Fibonacci {
 			}
 			catch (InputMismatchException e) {
 				System.out.println(e + "\nPlease enter an integer choice.");
+				scan.next();
 			}
 		}	
 	}
