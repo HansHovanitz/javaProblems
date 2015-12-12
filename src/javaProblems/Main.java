@@ -2,7 +2,7 @@ package javaProblems;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-//1.0.1
+//1.0.2
 
 public class Main {
 	
