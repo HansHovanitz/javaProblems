@@ -5,7 +5,7 @@ import java.util.InputMismatchException;
 public class Fibonacci {
 	
 	private Scanner scan;
-	boolean flag;
+	private boolean flag;
 	
 	public Fibonacci(Scanner scan) {
 		this.scan = scan;

@@ -15,11 +15,11 @@ public class Main {
 			
 			System.out.println("Menu:\n"
 			+ "1: Palindrome\n"
-			+ "2: Fibonacci");
+			+ "2: Fibonacci\n"
+			+ "3: Word Frequency");
 			System.out.println("Enter your choice:");
 			
 			try {			
-				//int choice = Integer.parseInt(scan.next());
 				int choice = scan.nextInt();
 				
 				
@@ -29,6 +29,9 @@ public class Main {
 						break;
 				case 2: Fibonacci fib = new Fibonacci(scan);
 						fib.enterNumber();
+						break;
+				case 3: WordFrequency word = new WordFrequency(scan);
+						word.frequencyTable();
 						break;
 				case 0: menu = 0;
 				}
