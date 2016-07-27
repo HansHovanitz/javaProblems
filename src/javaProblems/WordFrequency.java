@@ -7,10 +7,11 @@ public class WordFrequency {
 	
 	private Scanner scan;
 	private String lineToParse;
+	private String [] tokens;
 	
 	public WordFrequency(Scanner scan){
 		this.scan = scan;	
-		lineToParse = "";
+		lineToParse = ""; 
 	}
 	
 	public void frequencyTable() {
@@ -18,8 +19,13 @@ public class WordFrequency {
 			Scanner in = new Scanner(new FileReader("words.txt"));
 			while (in.hasNextLine()){
 				lineToParse = in.nextLine();
-				System.out.println(lineToParse);
+				//tokens = lineToParse.replaceAll("\\[|\\]|\\.","").split(" ");
+				tokens = lineToParse.replaceAll("[^a-zA-Z]"," ").split(" ");
+				
+				
 			}
+			System.out.println(tokens[4]);
+			System.out.println(tokens[0]);
 			
 			//in.close();
 			
